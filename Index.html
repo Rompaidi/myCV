@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 28px;
+  font-family: arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+/* Foto */
+.dropdown {
+  position:relative;
+  display: inline-block;
+  margin: 0;
+  align-content: center;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.info{
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin: 20px;
+  border-radius: 5px;
+}
+#study{
+  color: #4CAF50;
+}
+.header {
+  position:sticky;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  z-index: -99;
+}
+#study_info{
+  color: #000000;
+  font-size: 20px;
+  text-decoration: dotted;
+  content: " ";
+}
+#study_info:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+h3 {
+  color: #4CAF50;
+}
+#actual_learning{
+  color: #000000;
+  font-size: 20px;
+  text-decoration: dotted;
+  content: " ";
+}
+#actual_learning:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#picture{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#phone{
+  position: flex;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: dotted;
+  content: " ";
+}
+#phone:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div class="dropdown" id="home">
+    <img src="yo.jpg" alt="Yo" width="220" height="329">
+    <div class="dropdown-content">
+    <img src="yo.jpg" alt="Yo" width="220" height="329">
+    <div class="desc">Soy yo</div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <ul>
+    <li><a class="active" href="#home">Yo</a></li>
+    <li><a href="#info">Info.</a></li>
+    <li><a>Y más...</a></li>
+  </ul>
+  <!-- End -->
+<div class="header">
+  <h2>Víctor Agraz Pozos</h2>
+  <p id="phone">Teléfono: +34 671 17 00 75</p>
+  <p id="phone"><strong>Email:</strong> agrazpozosvictor@gmail.com</p>
+</div>
+
+<div class="info" id="info">
+  <h3>Sobre mí</h3>
+  <p>Soy una persona muy inteligente, preparado para cualquier situación y muy enterado en todo lo relacionado sobre la tecnología, móviles, etc</p>
+</div>
+<div class="info">
+  <h3 id="study">Estudios</h3>
+<p id="study_info"><strong>• ESO</strong> en Nuestra Señora de Monte-sión, Torrent, Valencia.</p>
+<p id="actual_learning">• Actualmente cursando <strong>formación de teleoperador de teleasistencia en Aspasia.</strong></p>
+<h3>Habilidades técnicas</h3>
+<p id="actual_learning"><strong>Aprendizaje autodidacta:</strong> Capacidad de aprender por cuenta propia usando recursos como tutoriales, cursos online, foros, etc.</p>
+<p id="actual_learning"><strong>Resolución de problemas técnicos:</strong> habilidad para identificar y solucionar fallos o errores en dispositivos o sistemas.</p>
+<p id="actual_learning"><strong>Curiosidad tecnológica:</strong>  interés por aprender sobre nuevos dispositivos, apps, software, etc.</p>
+<p id="actual_learning"><strong>Manejo de herramientas digitales: </strong>  facilidad para usar programas de oficina, apps móviles, sistemas operativos, redes sociales, etc.</p>
+<p id="actual_learning"><strong>Conocimientos básicos de programación o software.</strong></p>
+
+<h3>Aptitudes</h3>
+<p id="actual_learning">Pensamiento lógico y analítico.</p>
+<p id="actual_learning">Paciencia y perseverancia.</p>
+<p id="actual_learning">Creatividad para usar la tecnología de formas novedosas.</p>
+<p id="actual_learning">Trabajo colaborativo en entornos digitales.</p>
+<p id="actual_learning">Comunicación digital efectiva.</p>
+<h3>Idioma</h3>
+<p id="actual_learning">Inglés: B1.1</p>
+<p id="actual_learning">Valenciano: Intermedio</p>
+</div>
+</body>
+</html>
